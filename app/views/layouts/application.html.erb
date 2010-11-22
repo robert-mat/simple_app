@@ -2,11 +2,16 @@
 <html>
   <head>
     <title><%= title %></title>
-    <%= csrf_meta_tag %>   
-    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-    <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+    <%= csrf_meta_tag %>
+    <%= render :partial => 'layouts/stylesheets' %>
   </head>
   <body>
-    <%= yield %>
+    <div class="container">
+        <%= render :partial => 'layouts/header' %>
+        <section>
+          <%= yield %>
+        </section>    
+        <%= render :partial => 'layouts/footer' %>
+    </div>
   </body>
-</html>
+</html>                                               
