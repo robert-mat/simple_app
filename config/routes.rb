@@ -12,7 +12,7 @@ SampleApp::Application.routes.draw do
   match '/about' => 'pages#about'
   match '/help' => 'pages#help'
    
-  match '/signup' => 'users#new'
+  match '/signup' => 'user#new'
   
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
