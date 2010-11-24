@@ -9,7 +9,7 @@ SampleApp::Application.routes.draw do
   match '/about' => 'pages#about'
   match '/help' => 'pages#help'
    
-  match '/signup' => 'user#new'
+  match '/signup' => 'users#new'
   
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
@@ -17,7 +17,7 @@ SampleApp::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :user
+  resources :users
   # Sample resource route with options:
   #   resources :products do
   #     member do
